@@ -6,13 +6,13 @@
 - [ ] 多媒体元素
 ### 2.CSS框架学习
 - [ ] Bootstrap
-- [ ] Less
-- [ ] Stylus
+- [ ] Less（寒假）
+- [ ] Stylus（寒假）
 ## 二、JS
 - [ ] jQuery
-- [ ] AJAX&PJAX
-- [ ] JSON
-## 三、其他
+- [ ] AJAX&PJAX（寒假）
+- [ ] JSON（寒假）
+## 三、其他（寒假）
 - [ ] PHP
 - [ ] XML
 - [ ] Java
