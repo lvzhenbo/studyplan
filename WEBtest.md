@@ -39,6 +39,7 @@
 |÷|除号|`&divide;`|
 |²|平方2（上标2）|`&sup2;`|
 |³|立方3（上标3）|`&sup3;`|
+
 图像标记：`<img src="" alt="" width="" height="" align="" vspace="" hspace="">`
 
 超链接标记：`<a href="跳转目标" target="目标窗口的弹出方式（_self/_blank）">文本或图像</a>`
