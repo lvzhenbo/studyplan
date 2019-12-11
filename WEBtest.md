@@ -127,3 +127,313 @@ white-space:空白符处理
 text-shadow:阴影效果
 
 text-overflow:标示对象溢出文本
+### 5.链接伪类
+|  超链接标记`<a>`的伪类  |  含义  |
+|----|----|
+|  a:link{css样式规则}  |  未访问时超链接的状态  |
+|  a:visited{css样式规则}  |  访问后超链接的状态  |
+|  a:hover{css样式规则}  |  鼠标经过悬停时超链接的状态  |
+|  a:active{css样式规则}  |  鼠标单击不动时超链接的状态  |
+### 6.盒子模型
+#### 盒子模型的属性
+```css
+.box{
+    width: 200px;               /* 盒子的长度 */
+    height: 50px;               /* 盒子的高度 */
+    border: 15px solid red;     /* 盒子的边框大小、线条及颜色 */
+    background: #CCC;           /* 盒子的背景色 */
+    padding: 30px;              /* 盒子的内边距 */
+    margin: 20px;               /* 盒子的外边距 */
+}
+```
+#### 盒子的宽与高
+
+* 盒子的总宽度=width+左右内边距之和+左右边框高度之和+左右外边距之和
+
+* 盒子的总宽度=width+左右内边距之和+左右边框高度之和+左右外边距之和
+
+#### 边框属性
+
+|  设置内容  |  样式属性  |  常用属性值  |
+|----|----|----|
+|  边框样式  |  border-style:上边[右边 下边 左边];  |  none 无(默认)、solid 单实线、dashed 虚线、dotted 点线、double 双实线  |
+|  边框宽度|bordeer-width:上边[右边 下边 左边]  |  像素值  |
+|  边框颜色|border-color:上边[右边 下边 左边]  |  颜色值、#十六进制、rgb(r,g,b)、rgb(r%, g% b%)  |
+|  综合设置边框  |  border:四边宽度 四边样式 四边颜色;  ||
+|  圆角边框  |  border-radius:水平/垂直半径参数  |  像素值或百分比  |
+|  图片边框  |  border-images:图片路径 裁切方式/边框高度/边框扩展距离 重复方式;  ||
+#### 背景属性
+背景颜色：background-color:颜色值、#十六进制、rgb(r,g,b)、rgb(r%, g% b%);
+
+背景图像：background-image:url(图片地址);
+
+图像平铺：background-repeat:repeat/no-repeat/repeat-x/rpeat-y;
+
+图像位置（no-repeat）：background-position:水平位置 垂直位置;
+
+图像大小：background-size:属性值1 属性值2;
+|属性值|说明|
+|---|---|
+| 像素值 | 设置背景图像的高度和宽度。第一个值设置宽度，第二个值设置高度。如果只设置一个值，则第二个值会默认为auto |
+| 百分比 | 以父元素的百分比来设置背景图像的宽度和高度。第一个值设置宽度，第二个值设置高度。如果只设置一个值，则第二个值会默认为auto |
+| cover | 把背景图像扩展至足够大，是背景图像完全覆盖背景区域。背景图像的某些部分也许无法显示在北京定位区域中 |
+| contain | 把图像扩展至最大尺寸，以是其宽度和高度完全适应内容区域 |
+
+### 7.浮动与定位
+
+#### 浮动属性float
+* 选择器{float:属性值;}
+#### 清除浮动
+* 选择器{clear:属性值}
+#### overflow属性
+选择器{overflow:属性值}
+|属性值|描述|
+|---|---|
+|visible|内容不会被修剪，会呈现在元素之外(默认值)|
+|hidden|溢出内容会被修剪，并且被修剪的内容时不可见的|
+|auto|在需要时产生滚动条，即自适应所要显示的内容|
+|scroll|溢出内容会被修剪，且浏览器会始终显示滚动条|
+#### 定位属性
+选择器{position:属性值}
+|值|描述|
+|----|----|
+|static|静态定位（默认定位方式）|
+|relative|相对定位，相对于其原文档流的位置进行定位|
+|absolute|绝对定位，相对于其上一个已经定位的父元素进行定位|
+|fixed|固定定位，相对于浏览器窗口进行定位|
+#### 边偏移
+top（上），bottom（下），left（左），right（右）
+#### 元素的转换
+选择器{display:属性值}
+* inline:此元素将显示为行内元素
+* block:此元素将显示为块元素
+* inline-block:元素将显示为行内块元素
+* none:此元素将被隐藏不显示，也不占用页面内容
+### 8.表单
+#### input元素的相关属性
+<table>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+<tr>
+<td rowspan="18">type</td>
+<td>text</td>
+<td>单行文本输入框</td>
+</tr>
+<tr>
+<td>password</td>
+<td>密码输入框</td>
+<td>
+</tr>
+<tr>
+<td>radio</td>
+<td>单选按钮</td>
+<td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>复选框</td>
+<td>
+</tr>
+<tr>
+<td>button</td>
+<td>普通按钮</td>
+<td>
+</tr>
+<tr>
+<td>submit</td>
+<td>提交按钮</td>
+<td>
+</tr>
+<tr>
+<td>reset</td>
+<td>重置按钮</td>
+<td>
+</tr>
+<tr>
+<td>image</td>
+<td>图像形式的提交按钮</td>
+<td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>隐藏域</td>
+<td>
+</tr>
+<tr>
+<td>file</td>
+<td>文件域</td>
+<td>
+</tr>
+<tr>
+<td>email</td>
+<td>E-mail地址的输入域</td>
+<td>
+</tr>
+<tr>
+<td>url</td>
+<td>URL地址的输入域</td>
+<td>
+</tr>
+<tr>
+<td>number</td>
+<td>数值的输入域</td>
+<td>
+</tr>
+<tr>
+<td>range</td>
+<td>一定范围内数字值的输入域</td>
+<td>
+</tr>
+<tr>
+<td>Date pickers(date，month，week，time，datetime，datetime-local)</td>
+<td>日期和时间的输入类型</td>
+<td>
+</tr>
+<tr>
+<td>search</td>
+<td>搜索域</td>
+<td>
+</tr>
+<tr>
+<td>color</td>
+<td>颜色输入类型</td>
+<td>
+</tr>
+<tr>
+<td>tel</td>
+<td>电话号码输入类型</td>
+<td>
+</tr>
+<tr>
+<td>name</td>
+<td>由用户自定义</td>
+<td>控件的名称</td>
+<td>
+</tr>
+<tr>
+<td>value</td>
+<td>由用户自定义</td>
+<td>input控件中的默认文本值</td>
+<td>
+</tr>
+<tr>
+<td>size</td>
+<td>正整数</td>
+<td>input控件在页面中的显示宽度</td>
+<td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>readonly</td>
+<td>该控件内容为只读（不能编辑修改）</td>
+<td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>disabled</td>
+<td>第一次加载页面时禁用该控件（显示为灰色）</td>
+<td>
+</tr>
+<tr>
+<td>checked</td>
+<td>checked</td>
+<td>定义选择控件默认被选中的项</td>
+<td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>正整数</td>
+<td>控件允许输入的最多字符数</td>
+<td>
+</tr>
+<tr>
+<td>autocomplete</td>
+<td>on/off</td>
+<td>设定是否自动完成表单字段内容</td>
+<td>
+</tr>
+<tr>
+<td>autofocus</td>
+<td>autofocus</td>
+<td>指定页面加载后是否自动获取焦点</td>
+<td>
+</tr>
+<tr>
+<td>form</td>
+<td>form元素的id</td>
+<td>设定字段隶属于哪一个或多个表单</td>
+<td>
+</tr>
+<tr>
+<td>list</td>
+<td>datalist元素的id</td>
+<td>设定字段的候选数据值列表</td>
+<td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>multiple</td>
+<td>指定输入框是否可以选择多个值</td>
+<td>
+</tr>
+<tr>
+<td>min、max和step</td>
+<td>数值</td>
+<td>规定输入框所允许的最大值、最小值及间隔</td>
+<td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>字符串</td>
+<td>验证输入的内容是否与定义的正则表达式匹配</td>
+<td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>字符串</td>
+<td>为input类型的输入框提供一种提示</td>
+<td>
+</tr>
+<tr>
+<td>required</td>
+<td>required</td>
+<td>规定输入框填写的内容不能为空</td>
+<td>
+</tr>
+</table>
+
+#### 其他表单元素
+textarea元素
+````html
+<textarea cols="每行中的字符数" rows="显示的行数">
+    文本内容
+</textarea>
+````
+select元素
+````html
+<select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    ...
+</select>
+````
+datalist元素
+````html
+<input type="text" list="namelist"/>
+<datalist id="namelist">
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    ...
+</datalist>
+````
+### 9.多媒体
+视频：`<video src="视频文件路径" controls="controls"></video>`
+
+音频：`<audio src="音频文件路径" controls="controls"></audio>`
+## 三、课本内所有例题和阶段案例源代码
+链接: https://pan.baidu.com/s/1EMlvPRDJSSRolEjtQVZTrQ 提取码: jym7
